@@ -1,0 +1,22 @@
+
+#main-game-field
+{
+    width: 100%;
+	background-color: #ffd31f;
+}
+
+.open-games, .active-players
+{
+	font-size: 14px;
+}
+
+.open-games th, td, .active-players th, td
+{
+	padding: 5px 7px;
+}
+
+.chat-text-box
+{
+	height: 100px;
+	overflow-y: scroll;
+}
