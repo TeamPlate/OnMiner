@@ -1,0 +1,157 @@
+              
+
+/*	The target you specified in the tag creation step. It's the shoutbox container. */
+#target {
+	width: 600px; 
+	height: 600px; 
+	margin:auto;
+}
+
+/*	The wrapper of the Shoutbox elements.	*/
+.xRTML-Shoutbox {
+	border: 1px solid #666; 
+	background: #EEE; 
+	padding: 30px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;								
+}
+
+/*	The class of the close element.	*/
+.xRTML-Shoutbox-Close {
+	cursor: pointer;
+	border: 1px solid black; 
+	text-align: right; 
+	color: #FFF; 
+	background:#FF0000; 
+	width: 25px; 
+	text-align:center; 
+	float:right;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;
+}		
+
+/*	The class of the login form container.	*/
+.xRTML-Shoutbox-LogInForm {
+	text-align:center;
+	background:#FFF;
+	margin-top: 50px;
+	padding: 15px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;		
+	border: 2px inset #ddd;					
+}
+
+/*	The class of the login button.	*/
+.xRTML-Shoutbox-LogInForm-LogIn {
+	width: 100px;
+	height: 40px;
+	margin:20px;
+}
+
+/*	The class of the input text for username	*/
+.xRTML-Shoutbox-LogInForm-UserName {
+	height: 40px;
+	text-align:center;
+}
+
+/*	The class of the notification area. Its the element where the names of the users that are currently writing appear.	*/
+.xRTML-Shoutbox-NotificationContainer {
+	margin-top: 50px;
+	background:#FFF;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;		
+	border: 2px inset #ddd;				
+	padding: 10px;				
+	line-height: 30px;
+}
+
+/*	The class of the users typing label	*/
+.xRTML-Shoutbox-NotificationContainer-UsersTypingLabel {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*	The class of the users typing container	*/
+.xRTML-Shoutbox-NotificationContainer-UsersTyping {
+	font-style: italic;
+}
+
+/*	The class of the shouts container	*/
+.xRTML-Shoutbox-ShoutsContainer {
+	margin-top: 50px;
+	background:#FFF;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;		
+	border: 2px inset #ddd;				
+	padding: 0 10px;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+/* The container of a shout	*/
+.xRTML-Shoutbox-Shout{
+	border-bottom: 1px solid #ddd;				
+}
+/*	The author of the shout	*/
+.xRTML-Shoutbox-Shout-UserName{
+	margin-right: 7px;
+	font-weight: bold;
+}
+
+/*	The shout message	*/
+.xRTML-Shoutbox-Shout-Message {
+	font-style: italic;
+}
+
+/* The container of th shout form	*/
+.xRTML-Shoutbox-ShoutForm {
+	margin-top: 50px;
+	background:#FFF;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;		
+	border: 2px inset #ddd;								
+	padding: 30px 10px;
+}
+
+/* The username label of the form	*/
+.xRTML-Shoutbox-ShoutForm-UserNameLabel{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+/*	The shout message input	*/
+.xRTML-Shoutbox-ShoutForm-ShoutContent {
+	margin: 10px auto;
+	width: 500px;
+	height: 30px;
+	resize: none;
+	display: block;
+}
+
+/* Send Shout button and logout button	*/
+.xRTML-Shoutbox-ShoutForm input {
+	width: 5%;
+	height: 4%;				
+	position: relative;
+	left: 45%;
+}
