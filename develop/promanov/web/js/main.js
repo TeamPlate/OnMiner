@@ -7,17 +7,17 @@ var gameField = document.getElementById('main-game-field');
 var forceResize = Kefir.emitter();
 var resizeStream = Kefir.merge([Kefir.fromEvent(window, 'resize'), forceResize]);
 resizeStream.onValue(function(){
-	gameField.style.height = gameField.offsetWidth + 'px';
+	gameField.style.height = (gameField.offsetWidth/1.5 | 0) + 'px';
 });
 forceResize.emit();
 
-var GameScoreTimer = require('./web/view/game-score-timer.jsx');
-React.render(
-	React.createElement(GameScoreTimer, null),
-	document.getElementById('game-timer')
-);
+//var GameScoreTimer = require('./web/view/game-score-timer.jsx');
+//React.render(
+//	<GameScoreTimer />,
+//	document.getElementById('game-timer')
+//);
 
-},{"./web/view/game-score-timer.jsx":150,"kefir":3,"react":149}],2:[function(require,module,exports){
+},{"kefir":3,"react":149}],2:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -21002,37 +21002,4 @@ module.exports = warning;
 },{"./emptyFunction":110,"_process":2}],149:[function(require,module,exports){
 module.exports = require('./lib/React');
 
-},{"./lib/React":31}],150:[function(require,module,exports){
-
-var React = require('react');
-var Kefir = require('kefir');
-
-var timerStream = Kefir.fromBinder(function(emitter) {
-	var gameStartTime = Date.now();
-	var intervalId = setInterval(function() {
-		emitter.emit((Date.now() - gameStartTime)/1000 | 0);
-	}, 1000);
-	return function() {
-		clearInterval(intervalId);
-	}
-});
-
-var GameScoreTimer = React.createClass({displayName: "GameScoreTimer",
-	getInitialState: function() {
-		var that = this;
-		timerStream.onValue(function(time){
-			that.setState({
-				timeElapsed: time
-			});
-		});
-		return {timeElapsed: ""};
-	},
-	render: function(){
-		return (
-			React.createElement("div", null, "Time: ", this.state.timeElapsed)
-		);
-	}
-});
-module.exports = GameScoreTimer;
-
-},{"kefir":3,"react":149}]},{},[1]);
+},{"./lib/React":31}]},{},[1]);

@@ -1,22 +1,54 @@
 
+.bordered
+{
+	/*border: 1px solid #a8a8a8;*/
+	outline: solid #674b0d 1px;
+	background-color: #dddddd;
+}
+
 #main-game-field
 {
-    width: 100%;
-	background-color: #ffd31f;
+	width: 100%;
 }
 
-.open-games, .active-players
+.field-scores-container
 {
-	font-size: 14px;
+	height: 100%;
+	width: 100%;
+	display: table;
 }
 
-.open-games th, td, .active-players th, td
+.field-scores-container > div
 {
-	padding: 5px 7px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.chat-text-box
+.field-scores-score
 {
-	height: 100px;
-	overflow-y: scroll;
+	height: 50px;
+	width: 100%;
+}
+
+.field-scores-score:first-child
+{
+	position: absolute;
+	top: 0;
+}
+
+.field-scores-score:last-child
+{
+	position: absolute;
+	bottom: 0;
+}
+
+.active-games, .active-players
+{
+	height: 45%
+}
+.active-players
+{
+	bottom: 0;
+	position: absolute;
+	width: 100%;
 }
