@@ -13,6 +13,7 @@
 11. mv apache-tomcat-8.0.18/ /opt/tomcat
 12. nano ~/.bashrc (export JAVA_HOME=/usr/lib/jvm/java-8-oracle/     export CATALINA_HOME=/opt/tomcat)
 13. . ~/.bashrc
-
+14. nano /etc/rc.local
+15. iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to 8080
 
 
