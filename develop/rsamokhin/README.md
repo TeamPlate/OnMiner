@@ -17,6 +17,14 @@
 15. iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to 8080
 16. apt-get install chkconfig
 17. nano /etc/init.d/tomcat (-> tomcat.txt)
+18. nano /etc/local
+19. /etc/init.d/tomcat start
+20. apt-get install git
+21. mkdir /prj && cd prj
+22. git clone https://github.com/TeamPlate/OnMiner.git
+23. cd /opt/tomcat/webbaps && ln -s /prj/OnMiner/develop/rsamokhin/
+24. nano /etc/crontab
+25. *  *    * * *   root    cd /prj/OnMiner && git pull
 
 
 
