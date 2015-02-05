@@ -10,6 +10,10 @@ resizeStream.onValue(function(){
 });
 forceResize.emit();
 
+Kefir.fromEvent($('#main-top-menu-open-button'), 'click').onValue(function(el){
+	$('.main-top-menu').toggleClass('opened');
+});
+
 //var GameScoreTimer = require('./web/view/game-score-timer.jsx');
 //React.render(
 //	<GameScoreTimer />,

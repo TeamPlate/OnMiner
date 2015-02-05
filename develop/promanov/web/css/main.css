@@ -52,3 +52,40 @@
 	position: absolute;
 	width: 100%;
 }
+
+.main-top-menu, .main-bottom-menu
+{
+	height: 50px;
+}
+.main-top-menu
+{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	transition: height 0.5s ease-out;
+}
+.main-top-menu.opened
+{
+	height: 150px;
+}
+
+.main-top-menu > .row
+{
+	height: 100%;
+}
+
+.main-top-menu .columns, .main-bottom-menu > .columns
+{
+	height: 100%;
+}
+#main-top-menu-open-button
+{
+	cursor: hand;
+	cursor: pointer;
+}
+
+.main-game-container
+{
+	position: relative;
+	top: 50px;
+}

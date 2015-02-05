@@ -14,35 +14,38 @@
 
 	</head>
 	<body>
-
-		<div class="row">
-			<div class="small-3 columns bordered">OnMine</div>
-			<div class="small-3 columns bordered">OnMine</div>
-			<div class="small-5 columns bordered">OnMine</div>
-			<div class="small-4 columns bordered">OnMine</div>
-		</div>
-		<div class="row collapse" data-equalizer>
-			<div class="small-13 columns bordered" data-equalizer-watch>
-				<div id="main-game-field"></div>
+		<div class="main-top-menu">
+			<div class="row">
+				<div class="small-3 columns bordered">OnMine</div>
+				<div class="small-3 columns bordered">OnMine</div>
+				<div class="small-5 columns bordered" id="main-top-menu-open-button">Открыть меню</div>
+				<div class="small-4 columns bordered">OnMine</div>
 			</div>
-			<div class="small-1 columns bordered" data-equalizer-watch>
-				<div class="field-scores-container">
-					<div>
-						<div class="field-scores-score bordered" style="height: 50px">1</div>
-						<div class="field-scores-score bordered" style="height: 50px">2</div>
-						<div class="field-scores-score bordered" style="height: 50px">3</div>
+		</div>
+		<div class="main-game-container">
+			<div class="row collapse main-game-area" data-equalizer>
+				<div class="small-13 columns bordered" data-equalizer-watch>
+					<div id="main-game-field"></div>
+				</div>
+				<div class="small-1 columns bordered" data-equalizer-watch>
+					<div class="field-scores-container">
+						<div>
+							<div class="field-scores-score bordered" style="height: 50px">1</div>
+							<div class="field-scores-score bordered" style="height: 50px">2</div>
+							<div class="field-scores-score bordered" style="height: 50px">3</div>
+						</div>
 					</div>
 				</div>
+				<div class="small-1 columns bordered" data-equalizer-watch>
+					<div class="active-games bordered">Games</div>
+					<div class="active-players bordered">Players</div>
+				</div>
 			</div>
-			<div class="small-1 columns bordered" data-equalizer-watch>
-				<div class="active-games bordered">Games</div>
-				<div class="active-players bordered">Players</div>
+			<div class="row main-bottom-menu">
+				<div class="small-4 columns bordered">Chat</div>
+				<div class="small-10 columns bordered">Chat</div>
+				<div class="small-1 columns bordered">Chat</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="small-4 columns bordered">Chat</div>
-			<div class="small-10 columns bordered">Chat</div>
-			<div class="small-1 columns bordered">Chat</div>
 		</div>
 
 		<script src="js/vendor/jquery.js"></script>
