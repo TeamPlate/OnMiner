@@ -15,5 +15,8 @@
 13. . ~/.bashrc
 14. nano /etc/rc.local
 15. iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to 8080
+16. apt-get install chkconfig
+17. nano /etc/init.d/tomcat (-> tomcat.txt)
+
 
 
