@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ page import="application.models.test" %>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -6,7 +7,8 @@
 </head>
 <body>
 <%
-    out.print("teswt");
+    test t = new test();
+    out.print(t.reply());
    // test t = new test();
     //out.print(t.cry());
 %>
