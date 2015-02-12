@@ -24,3 +24,5 @@
 23. cd /opt/tomcat/webbaps && ln -s /prj/OnMiner/develop/rsamokhin/
 24. nano /etc/crontab
 25. *  *    * * *   root    cd /prj/OnMiner && git pull
+
+## autodeploy  for .WAR
