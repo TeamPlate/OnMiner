@@ -6,6 +6,11 @@
 	background-color: #dddddd;
 }
 
+.full-height
+{
+	height: 100%;
+}
+
 #main-game-field
 {
 	width: 100%;
@@ -53,12 +58,13 @@
 	width: 100%;
 }
 
-.main-top-menu, .main-bottom-menu
-{
-	height: 50px;
-}
+.main-bottom-menu
+ {
+	 height: 25px;
+ }
 .main-top-menu
 {
+	height: 50px;
 	width: 100%;
 	position: absolute;
 	z-index: 1;
@@ -78,7 +84,7 @@
 {
 	height: 100%;
 }
-#main-top-menu-open-button
+#main-top-menu-open-button, #main-chat-menu-open-button
 {
 	cursor: hand;
 	cursor: pointer;
@@ -88,4 +94,53 @@
 {
 	position: relative;
 	top: 50px;
+}
+
+.main-chat
+{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	bottom: 0;
+	overflow: hidden;
+	transition: height 0.5s ease-out;
+	height: 0;
+}
+
+.main-chat.opened
+{
+	height: auto;
+}
+
+.main-chat > .row
+{
+	height: 100%;
+}
+
+.main-chat-user-list > ul
+{
+	overflow-y: scroll;
+	bottom: 0;
+	position: absolute;
+	top: 2em;
+	padding: 0;
+	right: 0;
+	left: 0;
+}
+.row.main-chat-area-output
+{
+	position: absolute;
+	bottom: 2em;
+	top: 0;
+	width: 100%;
+}
+.row.main-chat-area-input
+{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.row.main-chat-area-input > input[type=text]
+{
+	margin: 0;
 }
